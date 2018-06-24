@@ -1,8 +1,5 @@
-import { AnyDBWidgetEntityGateway } from "./persistence/anydb/AnyDBWidgetEntityGateway";
-import { MobileCreateWidgetRequest } from "./ui/mobileapp/request/MobileCreateWidgetRequest";
-import { MobileCreateWidgetViewModel } from "./ui/mobileapp/viewmodel/MobileCreateWidgetViewModel";
+// Layer 4 (blue) local dependencies from infrastructure
+// This is were we can wire together different implementations of SaveWidgetEntityGatewayInt
+import { SaveWidgetEntityGatewayAnyDBImp as SaveWidgetEntityGatewayImp } from "./persistence/anydb/EntityGatewayImp"
 
-// This is where you can wire up different implementations of WidgetEntityGateway
-import { AnyDBWidgetEntityGateway as WidgetEntityGatewayIMPL } from "./persistence/anydb/AnyDBWidgetEntityGateway";
-
-export { AnyDBWidgetEntityGateway, MobileCreateWidgetRequest, MobileCreateWidgetViewModel, WidgetEntityGatewayIMPL };
+export { SaveWidgetEntityGatewayImp };

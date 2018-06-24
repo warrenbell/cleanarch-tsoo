@@ -1,2 +1,2 @@
-// Level 1 in domain
-export type WidgetType = { id: any, rev: any, name: string };
+// Lives in Layer 1 (yellow) in domain
+export type WidgetType = { id?: any, rev?: any, name: string };

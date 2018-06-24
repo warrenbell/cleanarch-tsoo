@@ -1,6 +1,5 @@
 import { WidgetType } from "./entity/Types";
 import { Widget } from "./entity/Widget";
-import { WidgetEntityGateway } from "./gateway/WidgetEntityGateway";
+import { SaveWidgetEntityGatewayInt } from "./gateway/EntityGatewayInt";
 
-
-export { WidgetType, Widget, WidgetEntityGateway };
+export { WidgetType, Widget, SaveWidgetEntityGatewayInt };
