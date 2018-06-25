@@ -2,6 +2,6 @@
 import { WidgetType } from "../../../domain/src/index";
 
 // Lives in Layer 3 (green) in delivery
-export interface CreateWidgetRequestInt {
-    execute(widget: WidgetType): void;
+export interface IViewModel {
+    presentWidget(widget: WidgetType): void;
 }

@@ -2,6 +2,6 @@
 import { WidgetType } from "../../../domain/src/index";
 
 // Lives in Layer 1 (yellow) in domain
-export interface SaveWidgetEntityGatewayInt {
+export interface IEntityGateway {
     saveWidget(widget: WidgetType): Promise<WidgetType>;
 }

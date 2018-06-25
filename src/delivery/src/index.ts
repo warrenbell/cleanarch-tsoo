@@ -1,6 +1,6 @@
-import { CreateWidgetControllerImp } from "./controller/WidgetControllerImp";
-import { CreateWidgetPresenterImp } from "./presenter/WidgetPresenterImp";
-import { CreateWidgetRequestInt } from "./request/WidgetRequestInt";
-import { CreateWidgetViewModelInt } from "./viewmodel/WidgetViewModelInt";
+import { Controller } from "./controller/Controller";
+import { Presenter } from "./presenter/Presenter";
+import { IRequest } from "./request/IRequest";
+import { IViewModel } from "./viewmodel/IViewModel";
 
-export { CreateWidgetControllerImp, CreateWidgetPresenterImp, CreateWidgetRequestInt, CreateWidgetViewModelInt };
+export { Controller, Presenter, IRequest, IViewModel };

@@ -1,5 +1,5 @@
-import { CreateWidgetInputBoundaryInt } from "./boundary/input/WidgetInputBoundary";
-import { CreateWidgetOutputBoundaryInt } from "./boundary/output/WidgetOutputBoundary";
-import { CreateWidgetInteractorImp } from "./interactor/WidgetInteractor";
+import { IInputBoundary } from "./boundary/input/IInputBoundary";
+import { IOutputBoundary } from "./boundary/output/IOutputBoundary";
+import { Interactor } from "./interactor/Interactor";
 
-export { CreateWidgetInputBoundaryInt, CreateWidgetOutputBoundaryInt, CreateWidgetInteractorImp };
+export { IInputBoundary, IOutputBoundary, Interactor };

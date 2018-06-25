@@ -1,8 +1,8 @@
 // Layer 1 (yellow) dependencies from domain
-import { WidgetType, SaveWidgetEntityGatewayInt } from "../../../../domain/src/index";
+import { WidgetType, IEntityGateway } from "../../../../domain/src/index";
 
 // Lives in Layer 4 (blue) in infrastructure
-export class SaveWidgetEntityGatewayAnyDBImp implements SaveWidgetEntityGatewayInt {
+export class EntityGateway implements IEntityGateway {
     
     saveWidget(widget: WidgetType): Promise<WidgetType> {
          return new Promise<WidgetType>((resolve: any, reject: any) => {

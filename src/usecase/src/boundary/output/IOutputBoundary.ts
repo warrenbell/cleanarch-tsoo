@@ -2,6 +2,6 @@
 import { WidgetType } from "../../../../domain/src/index";
 
 // Lives in Layer 2 (red) in usecase
-export interface CreateWidgetOutputBoundaryInt {
-    execute(widget: WidgetType): void;
+export interface IOutputBoundary {
+    presentWidget(widget: WidgetType): void;
 }
