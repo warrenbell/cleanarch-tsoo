@@ -6,7 +6,7 @@ export class EntityGateway implements IEntityGateway {
     
     saveWidget(widget: WidgetType): Promise<WidgetType> {
          return new Promise<WidgetType>((resolve: any, reject: any) => {
-            // Implement CouchDB code here
+            // Implement DB code here
             resolve({id: "5etr3546ug78", rev: "763574903849", name: "Widget Name"});
          });
     }
